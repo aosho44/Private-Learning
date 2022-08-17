@@ -2,7 +2,7 @@ import './App.css';
 import { AboutMe, Profile } from './components/aboutMe/AboutMe';
 import { ArsenalOrSpurs } from './components/arsenalOrSpurs/ArsenalOrSpurs';
 import MyButton from './components/tutorial/Tutorial';
-import { RandomHero } from './components/renderingList/List';
+import { Random } from './components/renderingList/List';
 
 function App() {
 	return (
@@ -17,7 +17,7 @@ function App() {
 			</div>
 			<br />
 			<div>
-				<RandomHero />
+				<Random />
 			</div>
 		</>
 	);

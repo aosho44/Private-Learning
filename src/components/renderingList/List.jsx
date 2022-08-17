@@ -1,29 +1,30 @@
 import { useState } from 'react';
-export { RandomHero };
+export { Random };
 
 // This will randomly generate a DC Hero on button click
-function RandomHero() {
-	const dcHeros = [
-		{ name: 'The Flash', id: 1 },
-		{ name: 'Batman', id: 2 },
-		{ name: 'Superman', id: 3 },
-		{ name: 'Wonder Woman', id: 4 },
-		{ name: 'Martian Manhunter', id: 5 },
-		{ name: 'Green Lantern', id: 6 },
+function Random() {
+	const dcHeroes = [
+		'The Flash',
+		'Batman',
+		'Superman',
+		'Wonder Woman',
+		'Martian Manhunter',
+		'Green Lantern',
 	];
 
-	const [heros, setDCHeros] = useState('');
+	const [heroes, setDCHeroes] = useState('');
 
-	function Random() {
-		let number = Math.random(Math.floor() * 6);
+	function RandomHero() {
+		let number = Math.floor(Math.random() * 6);
+		setDCHeroes(dcHeroes[number]);
 		console.log(number);
 	}
 
 	return (
 		<>
-			<button>Generate a Random Hero</button>
+			<button onClick={RandomHero}>Generate a Random Hero</button>
 			<br />
-			<h1>{}</h1>
+			<h1>{heroes}</h1>
 		</>
 	);
 }
