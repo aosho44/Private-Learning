@@ -28,3 +28,4 @@ function Random() {
 		</>
 	);
 }
+//Use {} in the return so its read as a javascript code
