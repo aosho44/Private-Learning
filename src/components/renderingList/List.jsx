@@ -17,7 +17,6 @@ function Random() {
 	function RandomHero() {
 		let number = Math.floor(Math.random() * 6);
 		setDCHeroes(dcHeroes[number]);
-		console.log(number);
 	}
 
 	return (
